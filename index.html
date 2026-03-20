@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florence Estética</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-purple: #B59449;
+            --dark-overlay: rgba(0, 0, 0, 0.6);
+        }
+        .bg-purple-halana { background-color: var(--primary-purple); }
+        .text-purple-halana { color: var(--primary-purple); }
+        .border-purple-halana { border-color: var(--primary-purple); }
+        
+        body { font-family: 'Georgia', serif; }
+        
+        .hero-bg {
+            background: linear-gradient(var(--dark-overlay), var(--dark-overlay)), 
+                 url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <header class="py-6 flex justify-center border-b border-gray-100">
+        <div class="text-center">
+            <div class="text-purple-halana text-5xl mb-2">
+                <i class="fa-solid alt fa-seedling"></i> </div>
+            <h1 class="uppercase tracking-widest text-sm text-purple-halana font-semibold">Florence Estética</h1>
+            <p class="text-[10px] uppercase tracking-tighter text-gray-400">Estética • Spa</p>
+        </div>
+    </header>
+
+    <section class="hero-bg h-[600px] flex flex-col items-center justify-center text-center text-white px-4">
+        <h2 class="text-5xl md:text-6xl mb-4">Bem-estar e<br>relaxamento</h2>
+        <p class="text-lg mb-8 font-light">Terapias personalizadas para alívio e equilíbrio.</p>
+        <a href="https://wa.me/5581984073499" target="_blank" class="bg-white text-purple-halana px-12 py-5 text-xl rounded-full font-medium hover:bg-gray-300 transition shadow-lg">
+            Agende sua sessão
+        </a>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-16 w-full max-w-5xl">
+            <div class="bg-black/30 backdrop-blur-sm py-12 border border-white/10">
+                <h3 class="font-bold mb-2">Massagens Relaxantes</h3>
+                <p class="text-sm text-gray-200">Alívio para tensão e estresse.</p>
+            </div>
+            <div class="bg-black/30 backdrop-blur-sm py-12 border border-white/10">
+                <h3 class="font-bold mb-2">Drenagem Linfática</h3>
+                <p class="text-sm text-gray-200">Redução de retenção de líquidos.</p>
+            </div>
+            <div class="bg-black/30 backdrop-blur-sm py-12 border border-white/10">
+                <h3 class="font-bold mb-2">Limpeza de Pele</h3>
+                <p class="text-sm text-gray-200">Pele mais limpa, saudável e revitalizada.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-purple-halana py-20 px-6 text-white">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl mb-6">Sobre Nós</h2>
+                <p class="text-lg leading-relaxed mb-8 opacity-90">
+                    A Clínica de Estética Florence é um refúgio de paz e bem-estar, dedicado ao cuidado e à renovação.
+                </p>
+                <a href="https://wa.me/5581984073499" target="_blank" class="bg-white text-purple-halana px-8 py-3 rounded-full font-medium hover:bg-gray-300 transition shadow-lg">
+                    Agende sua sessão
+                </a>
+            </div>
+            <div class="flex gap-4">
+                <div class="rounded-2xl overflow-hidden shadow-xl w-1/2">
+                    <img src="pessoal_Instagram.jpg" alt="Profissional" class="h-90 w-full object-cover">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-xl w-1/2 mt-8">
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=400&q=80" alt="Ambiente" class="h-80 w-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-purple-halana py-20 px-6 border-t border-white/10">
+        <div class="max-w-6xl mx-auto text-center text-white">
+            <h2 class="text-4xl mb-4">Nossos Serviços</h2>
+            <p class="mb-12 opacity-80">Atendimentos personalizados para alívio físico e equilíbrio emocional.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg text-gray-800">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=500&q=80" class="h-56 w-full object-cover">
+                    <div class="p-6 text-left">
+                        <h4 class="font-bold text-lg mb-2">Massagem Relaxante</h4>
+                        <p class="text-sm text-gray-600">Técnicas variadas para <b>tensão muscular</b>, estresse e relaxamento profundo.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg text-gray-800">
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover">
+                    <div class="p-6 text-left">
+                        <h4 class="font-bold text-lg mb-2">Drenagem Linfática</h4>
+                        <p class="text-sm text-gray-600">Técnica de massagem que <b>estimula o sistema linfático</b>, ajudando a reduzir inchaços e toxinas.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg text-gray-800">
+                    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover">
+                    <div class="p-6 text-left">
+                        <h4 class="font-bold text-lg mb-2">Limpeza de Pele</h4>
+                        <p class="text-sm text-gray-600">Procedimento estético que <b>remove impurezas</b>, cravos e células mortas, controlando a oleosidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 text-center px-6">
+        <h2 class="text-purple-halana text-4xl mb-4">Descubra seu bem-estar</h2>
+        <p class="text-gray-500 mb-8">Marque seu dia de relaxamento e bem-estar.</p>
+        <a href="https://wa.me/5581984073499" target="_blank" class="bg-purple-halana text-white px-10 py-4 rounded-full font-medium hover:opacity-70 transition">
+            Agende sua sessão
+        </a>
+        <div class="mt-12 max-w-xs mx-auto rounded-xl overflow-hidden shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80" alt="Massagem">
+        </div>
+    </section>
+
+    <footer class="bg-purple-halana text-white py-16 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/20 pt-12">
+            <div>
+                <h3 class="text-2xl mb-4">Florence Estética
+                <p class="text-base opacity-80 mb-6">Transforme sua energia e encontre seu equilíbrio.</p>
+                <a href="https://www.instagram.com/esteticamayaracaroline?igsh=MThnNzV5ZDZsaGI2Yg==" class="text-5xl hover:text-purple-500" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="md:text-right">
+                <p class="uppercase text-xs tracking-widest mb-4">Massagem, Drenagem Linfática e Limpeza de Pele</p>
+                <p class="text-lg mb-1">+55 81 9 8407-3499</p>
+                <p class="opacity-70">contato@halanaclinica.com.br</p>
+            </div>
+        </div>
+        <div class="text-center mt-12 text-xs opacity-50">
+            © 2025. All rights reserved.
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5581984073499" target="_blank" class="fixed bottom-6 right-6 bg-[#25d366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
