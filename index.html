@@ -22,7 +22,16 @@
                  url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
-        }
+        }   
+            /* Esconde a barra em todos os navegadores */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+        
     </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -39,7 +48,7 @@
     <section class="hero-bg h-[600px] flex flex-col items-center justify-center text-center text-white px-4">
         <h2 class="text-5xl md:text-6xl mb-4">Bem-estar e<br>relaxamento</h2>
         <p class="text-lg mb-8 font-light">Terapias personalizadas para alívio e equilíbrio.</p>
-        <a href="https://wa.me/5581984073499" target="_blank" class="bg-white text-purple-halana px-12 py-5 text-xl rounded-full font-medium hover:bg-gray-300 transition shadow-lg">
+        <a href="https://wa.me/5581973016063" target="_blank" class="bg-white text-purple-halana px-12 py-5 text-xl rounded-full font-medium hover:bg-gray-300 transition shadow-lg">
             Agende sua sessão
         </a>
 
@@ -66,7 +75,7 @@
                 <p class="text-lg leading-relaxed mb-8 opacity-90">
                     A Clínica de Estética Florence é um refúgio de paz e bem-estar, dedicado ao cuidado e à renovação.
                 </p>
-                <a href="https://wa.me/5581984073499" target="_blank" class="bg-white text-purple-halana px-8 py-3 rounded-full font-medium hover:bg-gray-300 transition shadow-lg">
+                <a href="https://wa.me/5581973016063" target="_blank" class="bg-white text-purple-halana px-8 py-3 rounded-full font-medium hover:bg-gray-300 transition shadow-lg">
                     Agende sua sessão
                 </a>
             </div>
@@ -82,40 +91,59 @@
     </section>
 
     <section class="bg-purple-halana py-20 px-6 border-t border-white/10">
-        <div class="max-w-6xl mx-auto text-center text-white">
+        <div class="max-w-7xl mx-auto text-center text-white">
             <h2 class="text-4xl mb-4">Nossos Serviços</h2>
             <p class="mb-12 opacity-80">Atendimentos personalizados para alívio físico e equilíbrio emocional.</p>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl overflow-hidden shadow-lg text-gray-800">
-                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=500&q=80" class="h-56 w-full object-cover">
-                    <div class="p-6 text-left">
-                        <h4 class="font-bold text-lg mb-2">Massagem Relaxante</h4>
-                        <p class="text-sm text-gray-600">Técnicas variadas para <b>tensão muscular</b>, estresse e relaxamento profundo.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-lg text-gray-800">
-                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover">
-                    <div class="p-6 text-left">
-                        <h4 class="font-bold text-lg mb-2">Drenagem Linfática</h4>
-                        <p class="text-sm text-gray-600">Técnica de massagem que <b>estimula o sistema linfático</b>, ajudando a reduzir inchaços e toxinas.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-lg text-gray-800">
-                    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover">
-                    <div class="p-6 text-left">
-                        <h4 class="font-bold text-lg mb-2">Limpeza de Pele</h4>
-                        <p class="text-sm text-gray-600">Procedimento estético que <b>remove impurezas</b>, cravos e células mortas, controlando a oleosidade.</p>
-                    </div>
-                </div>
-            </div>
+    <div id="carousel-container" class="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scroll-smooth scrollbar-hide">    
+     <div class="min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-2xl overflow-hidden shadow-lg text-gray-800">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=500&q=80" class="h-56 w-full object-cover">
+        <div class="p-6 text-left">
+            <h4 class="font-bold text-lg mb-2">Massagem Relaxante</h4>
+            <p class="text-sm text-gray-600">Técnicas variadas para <b>tensão muscular</b>, estresse e relaxamento profundo.</p>
+        </div>
+    </div>
+
+    <div class="min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-2xl overflow-hidden shadow-lg text-gray-800">
+        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover">
+        <div class="p-6 text-left">
+            <h4 class="font-bold text-lg mb-2">Drenagem Linfática</h4>
+            <p class="text-sm text-gray-600">Técnica de massagem que <b>estimula o sistema linfático</b>, ajudando a reduzir inchaços e toxinas.</p>
+        </div>
+    </div>
+
+    <div class="min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-2xl overflow-hidden shadow-lg text-gray-800">
+        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover">
+        <div class="p-6 text-left">
+            <h4 class="font-bold text-lg mb-2">Limpeza de Pele</h4>
+            <p class="text-sm text-gray-600">Procedimento estético que <b>remove impurezas</b>, cravos e células mortas, controlando a oleosidade.</p>
+        </div>
+    </div>
+
+    <div class="min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-2xl overflow-hidden shadow-lg text-gray-800">
+        <img src="detox.jpg" class="h-56 w-full object-cover">
+        <div class="p-6 text-left">
+            <h4 class="font-bold text-lg mb-2">Detox Corporal</h4>
+            <p class="text-sm text-gray-600">Focado em <b>eliminar toxinas</b>, reduzir a retenção de líquidos e diminuir medidas.</p>
+        </div>
+    </div>
+
+    <div class="min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-2xl overflow-hidden shadow-lg text-gray-800">
+        <img src="ventosaterapia.webp" class="h-56 w-full object-cover">
+        <div class="p-6 text-left">
+            <h4 class="font-bold text-lg mb-2">Ventosaterapia</h4>
+            <p class="text-sm text-gray-600">Técnica terapêutica que utiliza ventosas para <b>estimular a circulação</b> e bem-estar.</p>
+        </div>
+    </div>
+
+</div>
         </div>
     </section>
 
     <section class="py-20 text-center px-6">
         <h2 class="text-purple-halana text-4xl mb-4">Descubra seu bem-estar</h2>
         <p class="text-gray-500 mb-8">Marque seu dia de relaxamento e bem-estar.</p>
-        <a href="https://wa.me/5581984073499" target="_blank" class="bg-purple-halana text-white px-10 py-4 rounded-full font-medium hover:opacity-70 transition">
+        <a href="https://wa.me/5581973016063" target="_blank" class="bg-purple-halana text-white px-10 py-4 rounded-full font-medium hover:opacity-70 transition">
             Agende sua sessão
         </a>
         <div class="mt-12 max-w-xs mx-auto rounded-xl overflow-hidden shadow-2xl">
@@ -131,9 +159,9 @@
                 <a href="https://www.instagram.com/esteticamayaracaroline?igsh=MThnNzV5ZDZsaGI2Yg==" class="text-5xl hover:text-purple-500" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="md:text-right">
-                <p class="uppercase text-xs tracking-widest mb-4">Massagem, Drenagem Linfática e Limpeza de Pele</p>
-                <p class="text-lg mb-1">+55 81 9 8407-3499</p>
-                <p class="opacity-70">contato@halanaclinica.com.br</p>
+                <p class="uppercase text-xs tracking-widest mb-4">Massagem, Drenagem Linfática, Limpeza de Pele, Detox e Ventosa</p>
+                <p class="text-l mb-1 font-sans"><i class="fas fa-phone-alt "></i> 55 81 9 7301-6063</p>                
+                <p class="opacity-80 font-sans">Rua Vasco da Gama, N° 435 - Primeiro Andar, Recife-PE</p>
             </div>
         </div>
         <div class="text-center mt-12 text-xs opacity-50">
@@ -141,9 +169,10 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5581984073499" target="_blank" class="fixed bottom-6 right-6 bg-[#25d366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform">
+    <a href="https://wa.me/5581973016063" target="_blank" class="fixed bottom-6 right-6 bg-[#25d366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-
+    
+<script src="scripts.js"></script>
 </body>
 </html>
